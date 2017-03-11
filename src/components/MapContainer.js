@@ -1,5 +1,5 @@
 import React from 'react';
-import Map, {GoogleApiWrapper} from 'google-maps-react';
+import Map, {GoogleApiWrapper, Marker} from 'google-maps-react';
 
 export class MapContainer extends React.Component {
   render() {
@@ -8,7 +8,12 @@ export class MapContainer extends React.Component {
     }
     
     return (
-      <Map google={this.props.google} />
+      <Map google={this.props.google}>
+      	<Marker
+      		onClick={() => alert('you clicked a marker!')}
+      		name={'location'}
+      	/>
+      </Map>
     )
   }
 }
