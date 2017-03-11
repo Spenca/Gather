@@ -42,6 +42,7 @@ export class MapContainer extends React.Component {
 	      <Map 
 	      	google={this.props.google}
 	      	onClick={this.onMapClick}>
+          {/*centerAroundCurrentLocation={true}*/}
 	      	<Marker
 	      		ref='testRef'
 	      		onClick={this.onMarkerClick}
