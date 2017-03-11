@@ -46,25 +46,32 @@ export class MapContainer extends React.Component {
 			marginRight: 'auto',
 		};
 
+		const containerStyle = {
+			position: 'relative',
+		};
+
 
 		return (
-			<Map
-				google={this.props.google}
-				onClick={this.onMapClick}
-				style={mapStyle}>
-				{/*centerAroundCurrentLocation={true}*/}
-				<Marker
-					onClick={this.onMarkerClick}
-					name={'location'} />
-				<InfoWindow
-					marker={this.state.activeMarker}
-					visible={this.state.showingInfoWindow}
-					onClose={this.onMapClick}>
-					<div>
-						<h1>{this.state.selectedPlace.name}</h1>
-					</div>
-				</InfoWindow>
-			</Map>
+			<div id="test">
+				<Map
+					google={this.props.google}
+					onClick={this.onMapClick}
+					style={mapStyle}
+					containerStyle={containerStyle}>
+					{/*centerAroundCurrentLocation={true}*/}
+					<Marker
+						onClick={this.onMarkerClick}
+						name={'location'} />
+					<InfoWindow
+						marker={this.state.activeMarker}
+						visible={this.state.showingInfoWindow}
+						onClose={this.onMapClick}>
+						<div>
+							<h1>{this.state.selectedPlace.name}</h1>
+						</div>
+					</InfoWindow>
+				</Map>
+			</div>
 		);
 	}
 }
