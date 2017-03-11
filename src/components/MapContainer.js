@@ -40,14 +40,16 @@ export class MapContainer extends React.Component {
 		}
 
 		const mapStyle = {
-			width: '50%',
-			height: '50%',
+			width: '500px',
+			height: '500px',
 			marginLeft: 'auto',
 			marginRight: 'auto',
 		};
 
 		const containerStyle = {
 			position: 'relative',
+			height: '100%',
+			width: '100%'
 		};
 
 
