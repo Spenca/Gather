@@ -20,7 +20,7 @@ export class MapContainer extends React.Component {
 		if (this.state.showingInfoWindow) {
       		this.setState({
         		showingInfoWindow: false,
-        		activeMarker: null
+        		activeMarker: {}
       		})
     	}
 	}
@@ -44,18 +44,18 @@ export class MapContainer extends React.Component {
 	      	onClick={this.onMapClick}>
           {/*centerAroundCurrentLocation={true}*/}
 	      	<Marker
-	      		ref='testRef'
 	      		onClick={this.onMarkerClick}
 	      		name={'location'} />
 	      	<InfoWindow
           		marker={this.state.activeMarker}
-          		visible={this.state.showingInfoWindow}>
+          		visible={this.state.showingInfoWindow}
+          		onClose={this.onMapClick}>
             	<div>
               		<h1>{this.state.selectedPlace.name}</h1>
             	</div>
         	</InfoWindow>
 	      </Map>
-	    )
+	    );
   	}
 }
 
