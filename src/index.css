@@ -4,6 +4,13 @@ body {
   font-family: sans-serif;
 }
 
-#map {
-  height: 500px;
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+#main-title {
+  font-size: 5em;
+  color: seagreen;
 }
