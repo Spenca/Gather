@@ -2,7 +2,7 @@
   "name": "gather",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://spenca.github.io/HackUVic",
+  "homepage": "https://gather-98218.firebaseapp.com/",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
