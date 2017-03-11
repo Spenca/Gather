@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Container from './Components/Container.js';
+import Container from './components/Container.js';
 
 class App extends Component {
   render() {
