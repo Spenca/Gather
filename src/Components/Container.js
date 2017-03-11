@@ -6,6 +6,7 @@ export class Container extends React.Component {
     if (!this.props.loaded) {
       return <div>Loading...</div>
     }
+    
     return (
       <Map google={this.props.google} />
     )
