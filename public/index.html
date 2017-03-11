@@ -2,11 +2,19 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
+  <!--
+=======
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
     <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
     <!--
+>>>>>>> f996dd3b98d7a962205a2180fd289a04ba58a24b
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -15,12 +23,16 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+<<<<<<< HEAD
+  <title>React App</title>
+=======
+    <title>Gather</title>
+>>>>>>> f996dd3b98d7a962205a2180fd289a04ba58a24b
 </head>
 
 <body>
-    <div id="root"></div>
-    <!--
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -30,6 +42,31 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      // Create a map object and specify the DOM element for display.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: -34.397, lng: 150.644 },
+        scrollwheel: false,
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAWwyfjIc77cJ-Y4YdbR0A_qTf1qyWkZ4&callback=initMap" async defer></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAY-D_-soA5vffZRv_-DXG4_D7wo16AKTI",
+      authDomain: "gather-98218.firebaseapp.com",
+      databaseURL: "https://gather-98218.firebaseio.com",
+      storageBucket: "gather-98218.appspot.com",
+      messagingSenderId: "186136169941"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 
 </html>
