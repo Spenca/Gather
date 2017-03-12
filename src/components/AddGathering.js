@@ -76,8 +76,8 @@ class AddGathering extends React.Component {
 
   	render() {
     	return (
-        	<div id="add-gathering-button" >
-            	<a href="#" class="btn btn-lg" onClick={() => this.showPopup()}>Add gathering </a>
+        	<div id="add-gathering-div" >
+            	<a href="#" className="btn add-gathering-button" onClick={() => this.showPopup()}>Add gathering </a>
         	</div>
     	);
   	}
