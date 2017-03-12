@@ -4,7 +4,6 @@ import './App.css';
 import Header from './components/Header';
 import LeftPanel from './components/LeftPanel';
 import InfoPanel from './components/InfoPanel';
-import RightPanel from './components/RightPanel';
 
 class App extends Component {
 
@@ -16,14 +15,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div id="main-container">
         <Header />
-        <div className="row">
-          <div className="col-md-4">
+        <div className="row" >
+          <div id="left-panel" className="col-md-4">
             <LeftPanel />
           </div>
-          <div className="col-md-8">
-            <RightPanel />
+          <div id="right-panel"  className="col-md-6">
+            <InfoPanel />
           </div>
         </div>
       </div>
