@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SearchBar from './SearchBar';
-import Gathering from './Gathering';
+import GatheringList from './GatheringList';
 
 class LeftPanel extends React.Component {
   render() {
@@ -17,6 +17,7 @@ class LeftPanel extends React.Component {
             	time={"7:00-9:00PM"}
               description={"This is a description"}
             />
+            <GatheringList />
         </div>
     );
   }
