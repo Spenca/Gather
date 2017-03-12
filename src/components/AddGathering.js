@@ -4,13 +4,6 @@ import {Form, Text} from 'react-form';
 import Database from './../firebase/Database';
 
 class AddGathering extends React.Component {
-  
-  render() {
-    return (
-        <div id="add-gathering-button">
-            <a href="#" className="btn btn-lg">Add gathering</a>
-        </div>
-    );
 
   	constructor(props) {
   		super(props);
