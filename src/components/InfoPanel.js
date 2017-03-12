@@ -21,7 +21,7 @@ class InfoPanel extends React.Component {
                 </div>
 			        </div>
               ) : (
-                <h1>Select an appointment on the left!</h1>
+                <h1>Select a gathering on the left!</h1>
             )}
 
             
