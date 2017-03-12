@@ -65,6 +65,7 @@ class AddGathering extends React.Component {
 				                placeholder='Studying for 330 exam!'
 				              />
 				            </div>
+										<br/>
 				          <button type='submit'>Submit</button>
 				        </form>
 				      )
