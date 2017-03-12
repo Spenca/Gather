@@ -3,7 +3,7 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import GatheringList from './GatheringList';
 
-class LeftPanel extends React.Component {
+class RightPanel extends React.Component {
   render() {
     
     return (
@@ -13,7 +13,7 @@ class LeftPanel extends React.Component {
                 <h3 className="panel-title">Choose a thing</h3>
               </div>
               <div className="panel-body">
-      			     <p>Choosing a thing will do some stuff back over here.</p>
+      			     <p>Choosing a thing will do some stuff back over here..</p>
       			     <p><a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
               </div>
 			      </div>
@@ -22,4 +22,4 @@ class LeftPanel extends React.Component {
   }
 }
 
-export default LeftPanel;
+export default RightPanel;
