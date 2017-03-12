@@ -41,6 +41,7 @@ class GatheringList extends React.Component {
 				address={gathering.address}
 				date={gathering.date}
 				time={gathering.time}
+				onSelectGathering={this.props.onSelectGathering}
 			/>
 		);
 	}
