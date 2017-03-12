@@ -7,10 +7,10 @@ class LeftPanel extends React.Component {
   render() {
     
     return (
-        <div id="left-panel">
-            <h1 id="panel-title">Event List</h1>
+        <div className=".col-md-6">
+            <h3>Event List</h3>
             <SearchBar />
-            <GatheringList />
+        	<GatheringList />
         </div>
     );
   }

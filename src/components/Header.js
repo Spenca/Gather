@@ -4,8 +4,8 @@ class Header extends React.Component {
   render() {
     
     return (
-        <div id="header">
-          <h1 id="main-title">Gather</h1>
+        <div className="page-header">
+          <h1>Gather <small>a thing, for stuff</small></h1>
         </div>
     );
   }

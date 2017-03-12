@@ -7,11 +7,11 @@ class Gathering extends React.Component {
 
   	render() {
 	    return (
-	        <div className="gathering">
-	          <h1 className="gathering-title">{this.props.name}</h1>
-	          <p>{this.props.address}</p>
-	          <p>{this.props.time} {this.props.date}</p>
-	        </div>
+	    	<a type="button" href="#" className="list-group-item">
+		          <h4 className="list-group-item-heading">{this.props.name}</h4>
+		          <p className="list-group-item-text">{this.props.address}</p>
+		          <p className="list-group-item-text">{this.props.time} {this.props.date}</p>
+		    </a>
 	    );
   }
 }
