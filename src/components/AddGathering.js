@@ -5,13 +5,6 @@ import Database from './../firebase/Database';
 
 class AddGathering extends React.Component {
   
-  render() {
-    return (
-        <div id="add-gathering-button">
-            <a href="#" className="btn btn-lg">Add gathering</a>
-        </div>
-    );
-
   	constructor(props) {
   		super(props);
   	}
@@ -84,8 +77,8 @@ class AddGathering extends React.Component {
 
   	render() {
     	return (
-        	<div id="add-gathering-button" onClick={() => this.showPopup()}>
-            	<a href="#" class="btn btn-lg">Add gathering</a>
+        	<div id="add-gathering-div" onClick={() => this.showPopup()}>
+            	<a href="#" className="btn add-gathering-button">Add gathering</a>
         	</div>
     	);
   }
