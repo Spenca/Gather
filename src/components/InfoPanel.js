@@ -3,19 +3,28 @@ import React from 'react';
 class InfoPanel extends React.Component {
   render() {
     
+
+
     return (
         <div className=".col-md-6">
-            <div className="panel panel-default">
-      			  <div className="panel-heading">
-                <h1 id="gathering-title">Gathering Title</h1>
-              </div>
-              <div className="panel-body">
-      			     <p><b>Time:</b> 3:30pm </p>
-                 <p><b>Date:</b> Monday March 13th </p>
-                 <p><b>Location:</b> 3rd Floor ECS, room 330</p>
-      			     <p><b>Description:</b> Practicing for a hackathon if anyone is interested.</p>
-              </div>
-			      </div>
+            {this.props.data ? (
+              <div className="panel panel-default">
+                <div className="panel-heading">
+                  <h1 id="gathering-title">{this.props.data.name}</h1>
+                </div>
+
+                <div className="panel-body">
+                  <p><b>Time:</b> {this.props.data.time}</p>
+                  <p><b>Date:</b> {this.props.data.date}</p>
+                  <p><b>Location:</b> {this.props.data.location}</p>
+                  <p><b>Description:</b> {this.props.data.description}</p>
+                </div>
+			        </div>
+              ) : (
+                <h1>Select an appointment on the left!</h1>
+            )}
+
+            
         </div>
     );
   }

@@ -7,8 +7,19 @@ import InfoPanel from './components/InfoPanel';
 
 class App extends Component {
 
-  updateInfoPanel(gathering) {
-    alert("gathering name: " + gathering.name);
+  _updateInfoPanel(gathering) {
+    this.setState(
+      {
+        infoData: gathering
+      });
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      infoData: null
+    }
+    this.updateInfoPanel = this._updateInfoPanel.bind(this);
   }
 
 
@@ -19,10 +30,14 @@ class App extends Component {
         <Header />
         <div className="row" >
           <div id="left-panel" className="col-md-4">
-            <LeftPanel />
+            <LeftPanel 
+            onSelectGathering={this.updateInfoPanel}
+            />
           </div>
           <div id="right-panel"  className="col-md-6">
-            <InfoPanel />
+            <InfoPanel 
+              data={this.state.infoData}
+            />
           </div>
         </div>
       </div>
