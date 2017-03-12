@@ -20,5 +20,13 @@ module.exports = {
 	addGathering(gathering) {
 		gatherings.push(gathering);
 		emitter.emit('update');
+	},
+
+	updateGatherings(snapshot) {
+		gatherings = [];
+		snapshot.child("Gatherings").forEach(child => {
+			gatherings.push(child.val());
+		})
+		emitter.emit('update');
 	}
 }
