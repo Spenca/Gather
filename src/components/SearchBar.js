@@ -5,9 +5,9 @@ class SearchBar extends React.Component {
 
         return (
             <div id="search-bar">
-                <div class="form-group">
-                    <label class="control-label" for="focusedInput">Focused input</label>
-                    <input class="form-control" id="focusedInput" type="text" value="This is focused..."/>
+                <div className="form-group">
+                    <label className="control-label" >Search for a gathering</label>
+                    <input className="form-control" type="text" value="Search for a gathering"/>
 
                 </div>
             </div>
