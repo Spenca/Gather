@@ -7,11 +7,10 @@ class Gathering extends React.Component {
 
   	render() {
 	    return (
-	        <div id="gathering">
-	          {this.props.name}<br/>
-	          {this.props.address}<br/>
-	          {this.props.date}<br/>
-	          {this.props.time}
+	        <div className="gathering">
+	          <h1 className="gathering-title">{this.props.name}</h1>
+	          <p>{this.props.address}</p>
+	          <p>{this.props.time} {this.props.date}</p>
 	        </div>
 	    );
   }
