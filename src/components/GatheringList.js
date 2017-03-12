@@ -10,21 +10,24 @@ class GatheringList extends React.Component {
 		super(props);
 
 		let gathering1 = {
-			name:"CSC 330 study session",
+			organizer:"Cindy Lou",
+			title:"CSC 330 study session",
             location:"Bay Center",
             date:"March 12",
             time:"7:00-9:00PM",
 			description:"Studying for CSC 330 because it's really hard. Help pls."
         }
         let gathering2 = {
-			name:"Hackathon prep",
+			organizer:"Jim Bim",
+			title:"Hackathon prep",
             location:"Douglas Street McDonalds",
             date:"March 13",
             time:"10:00AM-1:00AM",
 			description:"Preparing for the next hackathon in advance because I got rekt at hack UVIC"
         }
         let gathering3 = {
-			name:"Just looking for people to hangout with :(",
+			organizer:"Mr. Lonely",
+			title:"Just looking for people to hangout with :(",
             location:"Clearihue Room 130",
             date:"March 14",
             time:"6:00PM-7:00PM",
