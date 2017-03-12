@@ -4,7 +4,6 @@ import {Form, Text} from 'react-form';
 import Database from './../firebase/Database';
 
 class AddGathering extends React.Component {
-  
   	constructor(props) {
   		super(props);
   	}
@@ -77,11 +76,11 @@ class AddGathering extends React.Component {
 
   	render() {
     	return (
-        	<div id="add-gathering-div" onClick={() => this.showPopup()}>
-            	<a href="#" className="btn add-gathering-button">Add gathering</a>
+        	<div id="add-gathering-button" >
+            	<a href="#" class="btn btn-lg" onClick={() => this.showPopup()}>Add gathering </a>
         	</div>
     	);
-  }
+  	}
 }
 
 export default AddGathering;
