@@ -14,7 +14,7 @@ class GatheringList extends React.Component {
 			title:"CSC 330 study session",
             location:"Bay Center",
             date:"March 12",
-            time:"7:00-9:00PM",
+            time:"7:00PM-9:00PM",
 			description:"Studying for CSC 330 because it's really hard. Help pls."
         }
         let gathering2 = {
