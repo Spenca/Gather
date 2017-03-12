@@ -47,6 +47,10 @@ p {
   color: 
 }
 
+#left-panel {
+  margin-left: 40px;
+}
+
 #right-panel {
   margin-top: 100px;
 }
@@ -120,5 +124,6 @@ p {
     background-color: #17B76D; /* Green */
     
 }
+
 
 
