@@ -63,8 +63,8 @@ export class MapContainer extends React.Component {
 					initialCenter={{
               			lat: 48.463004,
               			lng: -123.311927
-            		}}>
-					{/*centerAroundCurrentLocation={true}*/}
+            		}}
+					centerAroundCurrentLocation={true}>
 					<Marker
 						onClick={this.onMarkerClick}
 						name={'location'} />
