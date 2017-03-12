@@ -88,7 +88,7 @@ class AddGathering extends React.Component {
             	<a href="#" class="btn btn-lg">Add gathering</a>
         	</div>
     	);
-  }
+  	}
 }
 
 export default AddGathering;

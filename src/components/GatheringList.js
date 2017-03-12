@@ -63,6 +63,7 @@ class GatheringList extends React.Component {
 		let gathering = this.state.gatherings[index];
 		return (
 			<Gathering
+				key={gathering.id}
 				gathering={gathering}
 				onSelectGathering={this.props.onSelectGathering} />
 		);

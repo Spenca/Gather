@@ -8,7 +8,7 @@ class Database {
 		let myKey = myRef.key;
 
 		//TODO: set real gathering data
-
+		gathering["id"] = myKey;
 		myRef.set(gathering);
 	}
 
