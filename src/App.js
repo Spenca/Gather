@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import HeaderComponent from './components/HeaderComponent';
-import MapContainer from './components/MapContainer.js';
+import Header from './components/Header';
+import LeftPanel from './components/LeftPanel';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <HeaderComponent />
-        <MapContainer />
+          <Header />
+          <LeftPanel />
       </div>
     );
   }
