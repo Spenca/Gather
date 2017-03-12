@@ -13,7 +13,6 @@ class LeftPanel extends React.Component {
             <GatheringList 
               onSelectGathering={this.props.onSelectGathering}
             />
-        	<GatheringList />
         </div>
     );
   }
