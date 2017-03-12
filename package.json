@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://gather-98218.firebaseapp.com/",
   "dependencies": {
+    "firebase-tools": "^3.5.0",
     "google-maps-react": "^1.0.19",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
