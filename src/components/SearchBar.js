@@ -4,11 +4,14 @@ class SearchBar extends React.Component {
     render() {
 
         return (
-            <div id="search-bar">
-                <div className="form-group">
-                    <label className="control-label" >Search for a gathering</label>
-                    <input className="form-control" type="text" value="Search for a gathering"/>
-
+            <div className="panel success">
+                <div className="input-group">
+                    <span className="input-group-btn">
+                        <button className="btn btn-default" type="button">
+                            <span className="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </span>
+                    <input type="text" className="form-control" placeholder="Search for..." />
                 </div>
             </div>
         );

@@ -48,7 +48,7 @@ class GatheringList extends React.Component {
 
   	render() {
 	    return (
-	        <div id="gathering-list">
+	    	<div className="list-group">
 	            <ReactList
 	            	itemRenderer={this.renderItem}
 	            	length={this.state.gatherings.length}
