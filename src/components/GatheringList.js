@@ -4,6 +4,10 @@ import ReactList from 'react-list';
 import Gathering from './Gathering';
 import AddGathering from './AddGathering';
 
+import GatheringStore from './../GatheringStore.js';
+
+import Popup from 'react-popup';
+
 class GatheringList extends React.Component {
 
 	constructor(props) {
@@ -34,9 +38,24 @@ class GatheringList extends React.Component {
 			description:"I feel so alone"
         }
 
-		this.state = {gatherings: [gathering1, gathering2, gathering3]}
+        this.state = {gatherings: []}
 
 		this.renderItem = this._renderItem.bind(this);
+		this.updateGatherings = this._updateGatherings.bind(this);
+	}
+
+	componentWillMount() {
+		GatheringStore.subscribe(this.updateGatherings);
+	}
+
+	componentWillUnmount() {
+		GatheringStore.unsubscribe(this.updateGatherings);
+	}
+
+	_updateGatherings() {
+		this.setState({
+			gatherings: GatheringStore.getGatherings()
+		})
 	}
 
 	_renderItem(index, key) {
@@ -45,8 +64,7 @@ class GatheringList extends React.Component {
 		return (
 			<Gathering
 				gathering={gathering}
-				onSelectGathering={this.props.onSelectGathering}
-			/>
+				onSelectGathering={this.props.onSelectGathering} />
 		);
 	}
 
@@ -59,6 +77,7 @@ class GatheringList extends React.Component {
 	            	type='uniform'
 	            />
 				<AddGathering />
+				<Popup />
 	        </div>
 	    );
   	}
