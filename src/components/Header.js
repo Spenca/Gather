@@ -5,7 +5,8 @@ class Header extends React.Component {
     
     return (
         <div >
-          <h1>Gather <small>a thing, for stuff</small></h1>
+          <h1 id="main-title">Gather</h1>
+          <hr id="title-underline"/>
         </div>
     );
   }

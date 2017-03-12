@@ -23,8 +23,12 @@ body {
 }
 
 #main-title {
-  font-size: 5em;
-  color: seagreen;
+  font-size: 80px;
+  color: #17B76D;
+}
+
+#title-underline {
+  color: 
 }
 
 #right-panel {
@@ -58,9 +62,6 @@ body {
 .gathering-title {
   font-size: 25px;
 }
-
-
-
 
 #info-panel {
   margin-top: 60px;
