@@ -2,6 +2,7 @@ import React from 'react';
 import ReactList from 'react-list';
 
 import Gathering from './Gathering';
+import AddGathering from './AddGathering';
 
 class GatheringList extends React.Component {
 
@@ -54,6 +55,7 @@ class GatheringList extends React.Component {
 	            	length={this.state.gatherings.length}
 	            	type='uniform'
 	            />
+				<AddGathering />
 	        </div>
 	    );
   	}
