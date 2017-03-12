@@ -59,7 +59,11 @@ export class MapContainer extends React.Component {
 					google={this.props.google}
 					onClick={this.onMapClick}
 					style={mapStyle}
-					containerStyle={containerStyle}>
+					containerStyle={containerStyle}
+					initialCenter={{
+              			lat: 48.463004,
+              			lng: -123.311927
+            		}}>
 					{/*centerAroundCurrentLocation={true}*/}
 					<Marker
 						onClick={this.onMarkerClick}
