@@ -14,11 +14,11 @@ class InfoPanel extends React.Component {
                 </div>
 
                 <div className="panel-body">
-                  <p><b>Organizer:</b> {this.props.data.organizer}</p>
-                  <p><b>Time:</b> {this.props.data.time}</p>
-                  <p><b>Date:</b> {this.props.data.date}</p>
-                  <p><b>Location:</b> {this.props.data.location}</p>
-                  <p><b>Description:</b> {this.props.data.description}</p>
+                  <p><b className="dark-text">Organizer:</b> {this.props.data.organizer}</p>
+                  <p><b className="dark-text">Time:</b> {this.props.data.time}</p>
+                  <p><b className="dark-text">Date:</b> {this.props.data.date}</p>
+                  <p><b className="dark-text">Location:</b> {this.props.data.location}</p>
+                  <p><b className="dark-text">Description:</b> {this.props.data.description}</p>
                 </div>
 			        </div>
               ) : (

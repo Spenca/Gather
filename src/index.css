@@ -4,6 +4,22 @@ body {
   font-family: sans-serif;
 }
 
+h1, h2, h3, h4 {
+  color: #515151;
+}
+
+p {
+  color: grey;
+}
+
+.gathering-heading {
+  color:#515151 !important;
+}
+
+.dark-text {
+  color: #636262;
+}
+
 #app {
   display: flex;
   flex-direction: row;
@@ -85,7 +101,24 @@ body {
 	-moz-appearance: none;
 }
 
-#add-gathering-button {
+#add-gathering-div {
   text-align: center;
+  margin-top:50px;
   
 }
+
+
+.add-gathering-button {
+        padding: 8px;
+        border: 1px solid #17B76D;
+        border-radius: 5px;
+        transition: 0.1s;
+        color: grey;
+    }
+
+.add-gathering-button:hover {
+    background-color: #17B76D; /* Green */
+    
+}
+
+
